@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Someday − やりたいことを、100の枠に。 | バケットリスト</title>
-<meta name="description" content="人生でやりたいことを100の枠に書き留めて、叶えたら朱の斜線で消し込むバケットリストアプリ。大切な人とリストを共有して、ふたりで叶えていけます。">
+<meta name="description" content="1,000ダウンロード突破。人生でやりたいことを100の枠に書き留めて、叶えたら朱の斜線で消し込むバケットリストアプリ。大切な人とリストを共有して、ふたりで叶えていけます。">
 <meta property="og:title" content="Someday − やりたいことを、100の枠に。">
-<meta property="og:description" content="叶えたら朱線で消す、100の枠のバケットリスト。ふたりで共有して、思い出に。">
+<meta property="og:description" content="1,000ダウンロード突破。叶えたら朱線で消す、100の枠のバケットリスト。ふたりで共有して、思い出に。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://fumy98.github.io/someday/">
 <meta property="og:image" content="https://fumy98.github.io/someday/ogp.png">
@@ -16,7 +16,7 @@
 <meta property="og:image:alt" content="Someday のリスト画面。「いつかやりたいことを、100の枠に。ふたりでも。」">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Someday − やりたいことを、100の枠に。">
-<meta name="twitter:description" content="叶えたら朱の斜線で消し込む。大切な人と同じリストを、招待リンクひとつで。">
+<meta name="twitter:description" content="1,000ダウンロード突破。叶えたら朱の斜線で消し込む。大切な人と同じリストを、招待リンクひとつで。">
 <meta name="twitter:image" content="https://fumy98.github.io/someday/ogp.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="icon-180.png">
@@ -91,6 +91,14 @@
   .proof .count { display: flex; flex-direction: column; align-items: center; line-height: 1.05; }
   .proof b { font-family: var(--serif); font-size: 19px; }
   .proof small { font-size: 10px; font-weight: 700; }
+  /* 1,000 ダウンロード突破（ヒーロー上部の大きいエンブレム。App Store 1枚目と同じ形） */
+  .proof.big { display: inline-flex; gap: 8px; margin: 0 0 18px; padding: 10px 26px;
+    background: radial-gradient(ellipse at center, rgba(233,185,73,.30) 0%, rgba(233,185,73,.12) 45%, transparent 72%); }
+  .proof.big svg { width: 36px; height: 60px; stroke-width: .8; }
+  .proof.big b { font-size: 40px; letter-spacing: .02em; }
+  .proof.big b i { font-style: normal; color: var(--shu); font-size: .72em; vertical-align: .55em; margin-left: 2px; }
+  .proof.big small { font-size: 13px; letter-spacing: .12em; margin-top: 4px; }
+  @media (max-width: 820px) { .proof.big b { font-size: 34px; } .proof.big svg { width: 30px; height: 50px; } }
   @media (max-width: 820px) { .hero .wrap { grid-template-columns: 1fr; } .hero h1 { font-size: 32px; } }
 
   /* 画面 */
@@ -173,6 +181,7 @@
 <header class="hero" id="top">
   <div class="wrap">
     <div>
+      <div class="proof big" role="img" aria-label="1,000ダウンロード突破"><svg aria-hidden="true"><use href="#laurel"/></svg><span class="count"><b>1,000<i>+</i></b><small>ダウンロード突破</small></span><svg class="r" aria-hidden="true"><use href="#laurel"/></svg></div><br>
       <span class="eyebrow">iPhone アプリ / やりたいことリスト</span>
       <h1>やりたいことを、<br>100の枠に。<br><span class="strike">叶えたら</span>、朱で消す。</h1>
       <p class="sub">人生でやりたいことを001から100の枠に書き留めて、叶えたら朱の斜線で消し込むバケットリストアプリ。大切な人とリストを共有して、ふたりで叶えていけます。</p>
@@ -186,7 +195,6 @@
         <a class="store" href="https://apps.apple.com/app/id6804606288?pt=129352997&amp;ct=site_lp&amp;mt=8" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#apple"/></svg><span><small>App Store で</small>ダウンロード</span></a>
         <span class="store soon" aria-disabled="true"><svg aria-hidden="true"><use href="#play"/></svg><span><small>Android 版</small>近日公開</span></span>
       </div>
-      <div class="proof" role="img" aria-label="1,000ダウンロード突破"><svg aria-hidden="true"><use href="#laurel"/></svg><span class="count"><b>1,000+</b><small>ダウンロード突破</small></span><svg class="r" aria-hidden="true"><use href="#laurel"/></svg></div>
     </div>
     <div>
       <div class="shot"><img src="img/02_main_ja.jpg" alt="ふたりの100。叶えた項目に朱の斜線が引かれている" width="552" height="1200"></div>
